@@ -1,0 +1,23 @@
+{
+  "name": "fm-coming-soon-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susi189/fm-coming-soon-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susi189/fm-coming-soon-page/issues"
+  },
+  "homepage": "https://github.com/susi189/fm-coming-soon-page#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
