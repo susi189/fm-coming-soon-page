@@ -17,3 +17,28 @@ html,
 body {
   font-family: $main-font;
 }
+
+.mobile {
+  width: 100%;
+}
+
+.header {
+  &__logo {
+    padding: 2.5rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__description {
+    padding: 2.5rem;
+  }
+}

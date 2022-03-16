@@ -9,4 +9,26 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.mobile {
+  width: 100%;
+}
+
+.header__logo {
+  padding: 2.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__image img {
+  width: 100%;
+  height: auto;
+}
+
+.main__description {
+  padding: 2.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
