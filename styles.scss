@@ -16,6 +16,7 @@ $dg-red: hsl(0, 6%, 24%);
 html,
 body {
   font-family: $main-font;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .mobile {
@@ -64,4 +65,51 @@ body {
     line-height: 1.5rem;
     color: $desat-red;
   }
+}
+
+.input-area {
+  position: relative;
+  margin: 0 10%;
+}
+
+input {
+  font-family: $main-font;
+  font-size: 1rem;
+  color: $desat-red;
+  height: 50px;
+  width: 100%;
+  border: 1px solid $desat-red;
+  border-radius: 22px;
+  padding-left: 2rem;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  color: $desat-red;
+}
+
+button {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0px;
+  border: none;
+  height: 50px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background: linear-gradient(135deg, rgb(247, 226, 226), hsl(0, 74%, 74%));
+  border-radius: 22px;
+  box-shadow: rgba(252, 1, 1, 0.15) 0px 15px 25px,
+    rgba(250, 8, 8, 0.05) 0px 5px 10px;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: $dg-red;
 }
