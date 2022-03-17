@@ -19,22 +19,19 @@ section {
   padding-bottom: 2.5rem;
 }
 
-.mobile {
-  width: 100%;
-}
-
 .header__logo {
   padding: 2.5rem;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.main__image img {
-  width: 100%;
-  height: auto;
 }
 .main__description {
   padding: 3.5rem 3rem;
@@ -54,7 +51,7 @@ section {
   color: #413a3a;
 }
 .main__description p {
-  padding: 2rem;
+  padding: 2rem 0;
   line-height: 1.5rem;
   color: #ce9797;
 }
@@ -110,6 +107,49 @@ footer {
   font-size: 0.8rem;
   text-align: center;
   color: #413a3a;
+}
+
+@media all and (min-width: 1024px) {
+  .view {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "logo hero" "description hero";
+  }
+
+  .header {
+    grid-area: logo;
+    margin-left: 7rem;
+  }
+
+  .image {
+    grid-area: hero;
+  }
+
+  .main {
+    margin: 0rem 7rem;
+  }
+  .main__description {
+    grid-area: description;
+  }
+  .main__description > * {
+    text-align: start;
+  }
+  .main__description h1 {
+    font-size: 3.5rem;
+    width: 300px;
+  }
+  .main__description h2 {
+    font-size: 3.5rem;
+    width: 300px;
+  }
+  .main .input-area {
+    margin: 0;
+  }
+
+  .attribution {
+    text-align: start;
+    margin-left: 3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
