@@ -29,7 +29,11 @@
           </div>
         </header>
         <div class="image">
-          <img src="./images/hero-desktop.jpg" alt="picture of a model" />
+          <img
+            id="hero"
+            src="./images/hero-desktop.jpg"
+            alt="picture of a model"
+          />
         </div>
         <main class="main">
           <div class="main__description">
@@ -41,11 +45,12 @@
               and our launch deals.
             </p>
             <form>
-              <div class="input-area">
-                <input type="text" placeholder="Email Address" />
-                <button type="submit">
+              <div class="input-area" id="input">
+                <input id="email" type="text" placeholder="Email Address" />
+                <button id="btn-submit" type="button">
                   <img src="./images/icon-arrow.svg" />
                 </button>
+                <div id="error-msg"></div>
               </div>
             </form>
           </div>
@@ -63,5 +68,6 @@
         </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

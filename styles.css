@@ -30,14 +30,15 @@ section {
 
 .main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  margin: 0;
 }
 .main__description {
   padding: 3.5rem 3rem;
 }
 .main__description > * {
   text-align: center;
+  max-width: 400px;
 }
 .main__description h1 {
   font-size: 2.8rem;
@@ -58,7 +59,7 @@ section {
 
 .input-area {
   position: relative;
-  margin: 5% 10%;
+  margin: 5% 0;
 }
 
 input {
@@ -73,8 +74,28 @@ input {
   background-color: inherit;
 }
 
-input:focus {
+input:focus,
+input[text] {
   outline: none !important;
+  color: #413a3a;
+}
+
+.invalid {
+  border: 1px solid #fa5858;
+}
+
+#error-msg {
+  color: #fa5858;
+  min-height: 40px;
+  padding: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #413a3a !important;
 }
 
 ::placeholder {
@@ -88,12 +109,16 @@ button {
   right: 0px;
   border: none;
   height: 50px;
-  width: 70px;
+  width: 80px;
   background-repeat: no-repeat;
   background: linear-gradient(135deg, #f7e2e2, #ee8c8c);
   border-radius: 22px;
   box-shadow: rgba(252, 1, 1, 0.15) 0px 15px 25px, rgba(250, 8, 8, 0.05) 0px 5px 10px;
   cursor: pointer;
+}
+
+button:active {
+  opacity: 80%;
 }
 
 footer {
@@ -102,8 +127,7 @@ footer {
   width: 100%;
   height: 2.5rem;
 }
-
-.attribution {
+footer .attribution {
   font-size: 0.8rem;
   text-align: center;
   color: #413a3a;
@@ -119,7 +143,7 @@ footer {
 
   .view {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 60% 40%;
     grid-template-areas: "logo hero" "description hero";
     padding-bottom: 0;
     margin-bottom: 2.5rem;
@@ -172,9 +196,9 @@ footer {
     margin: 0;
   }
 
-  .attribution {
+  footer .attribution {
     text-align: start;
-    margin-left: 3rem;
+    margin-left: 8rem;
   }
 }
 
