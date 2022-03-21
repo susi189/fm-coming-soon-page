@@ -12,11 +12,11 @@ body {
 .page {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 section {
   padding-bottom: 2.5rem;
+  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 .header__logo {
@@ -59,7 +59,7 @@ section {
 
 .input-area {
   position: relative;
-  margin: 5% 0;
+  margin: 5%;
 }
 
 input {
@@ -102,6 +102,13 @@ input:-webkit-autofill:active {
   color: #ce9797;
 }
 
+#error-sign {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 90px;
+}
+
 button {
   position: absolute;
   z-index: 2;
@@ -117,7 +124,7 @@ button {
   cursor: pointer;
 }
 
-button:active {
+button:hover {
   opacity: 80%;
 }
 
@@ -131,6 +138,7 @@ footer .attribution {
   font-size: 0.8rem;
   text-align: center;
   color: #413a3a;
+  margin-top: 20px;
 }
 
 @media all and (min-width: 1024px) {

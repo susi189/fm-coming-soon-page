@@ -25,11 +25,11 @@ body {
 .page {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 section {
   padding-bottom: 2.5rem;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .header {
@@ -79,7 +79,7 @@ section {
 
 .input-area {
   position: relative;
-  margin: 5% 0;
+  margin: 5%;
 }
 
 input {
@@ -122,6 +122,13 @@ input:-webkit-autofill:active {
   color: $desat-red;
 }
 
+#error-sign {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 90px;
+}
+
 button {
   position: absolute;
   z-index: 2;
@@ -138,7 +145,7 @@ button {
   cursor: pointer;
 }
 
-button:active {
+button:hover {
   opacity: 80%;
 }
 
@@ -152,6 +159,7 @@ footer {
     font-size: 0.8rem;
     text-align: center;
     color: $dg-red;
+    margin-top: 20px;
   }
 }
 

@@ -20,11 +20,10 @@ window.addEventListener("resize", (e) => {
 
 //check email
 
-// const inputSec = document.getElementById("input");
 const submitBtn = document.getElementById("btn-submit");
 const inputEmail = document.getElementById("email");
 const errorMsg = document.getElementById("error-msg");
-// errorMsg.innerText = "Please provide a valid email";
+const errorSign = document.getElementById("error-sign");
 
 const checkEmail = (str) => {
   let isValid = false;
@@ -46,10 +45,13 @@ const handleInput = (str) => {
   if (!result) {
     inputEmail.classList.add("invalid");
     errorMsg.innerText = "Please provide a valid email";
+    errorSign.innerHTML = `<img src="./images/icon-error.svg"
+                />`;
   } else {
     inputEmail.classList.remove("invalid");
     errorMsg.innerText = "";
     inputEmail.value = "";
+    errorSign.innerHTML = "";
   }
 };
 
