@@ -1,23 +1,24 @@
 //Handle image based on screen size
 
-const image = document.getElementById("hero");
+const imageDiv = document.getElementById("image");
+const img = document.createElement("img");
 
-window.onload = () => {
+const addImg = () => {
   if (window.innerWidth < 1024) {
-    image.src = "images/hero-mobile.jpg";
-  } else {
-    image.src = "images/hero-desktop.jpg";
+    img.src = "images/hero-mobile.jpg";
+    imageDiv.appendChild(img);
+  } else if (window.innerWidth > 1024) {
+    img.src = "";
   }
 };
 
-window.addEventListener("resize", (e) => {
-  if (window.innerWidth < 1024) {
-    image.src = "images/hero-mobile.jpg";
-  } else {
-    image.src = "images/hero-desktop.jpg";
-  }
-});
+window.onload = () => {
+  addImg();
+};
 
+window.addEventListener("resize", () => {
+  addImg();
+});
 //check email
 
 const submitBtn = document.getElementById("btn-submit");

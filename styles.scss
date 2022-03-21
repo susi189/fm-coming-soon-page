@@ -27,14 +27,21 @@ body {
   min-height: 100vh;
 }
 
+.view {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
   padding-bottom: 2.5rem;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .header {
+  padding: 3rem;
+
   &__logo {
-    padding: 2.5rem;
+    width: 400px;
   }
 }
 
@@ -166,10 +173,9 @@ footer {
 @media all and (min-width: $desktop) {
   .page {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: flex-start;
   }
+
   .view {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -179,32 +185,31 @@ footer {
 
     padding-bottom: 0;
     margin-bottom: 2.5rem;
-    width: 1024px;
+    width: 100%;
     height: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
   .header {
     grid-area: logo;
-    margin-left: 6.5rem;
+    padding: 0;
+    margin: 0 6.5rem;
+    display: flex;
+    justify-content: center;
 
     &__logo {
       padding: 2.5rem 0;
+      width: 400px;
     }
   }
 
   .image {
     grid-area: hero;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .image img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+    background-image: url("./images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
   }
 
   .main {
