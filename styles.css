@@ -7,9 +7,6 @@
 html,
 body {
   font-family: "Josefin Sans", sans-serif;
-}
-
-.page {
   position: relative;
   min-height: 100vh;
 }
@@ -17,11 +14,6 @@ body {
 .view {
   display: flex;
   flex-direction: column;
-}
-
-section {
-  padding-bottom: 2.5rem;
-  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 .header {
@@ -128,7 +120,8 @@ button {
   background-repeat: no-repeat;
   background: linear-gradient(135deg, #f7e2e2, #ee8c8c);
   border-radius: 22px;
-  box-shadow: rgba(252, 1, 1, 0.15) 0px 15px 25px, rgba(250, 8, 8, 0.05) 0px 5px 10px;
+  box-shadow: rgba(252, 1, 1, 0.15) 0px 15px 25px,
+    rgba(250, 8, 8, 0.05) 0px 5px 10px;
   cursor: pointer;
 }
 
@@ -139,18 +132,17 @@ button:hover {
 footer {
   position: absolute;
   bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
   width: 100%;
-  height: 2.5rem;
 }
 footer .attribution {
   font-size: 0.8rem;
-  text-align: center;
-  color: #413a3a;
-  margin-top: 20px;
+  color: #ce9797;
 }
 
 @media all and (min-width: 1024px) {
-  .page {
+  body {
     display: flex;
     justify-content: flex-start;
   }
@@ -160,7 +152,6 @@ footer .attribution {
     grid-template-columns: 60% 40%;
     grid-template-areas: "logo hero" "description hero";
     padding-bottom: 0;
-    margin-bottom: 2.5rem;
     width: 100%;
     height: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -209,9 +200,12 @@ footer .attribution {
     margin: 0;
   }
 
+  footer {
+    width: 60%;
+  }
+
   footer .attribution {
-    text-align: start;
-    margin-left: 8rem;
+    text-align: center;
   }
 }
 

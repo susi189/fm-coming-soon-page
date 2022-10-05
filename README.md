@@ -34,6 +34,12 @@ Users should be able to:
 - Mobile-first workflow
 - Vanilla JavaScript
 
+Note about running SASS: use the following command in the terminal
+
+`npm run sass`
+
+it will run the script for compiling the scss file to css.
+
 ### What I learned
 
 Given that the challenge was focused just on one page with no complex content I decided to practice building web content with HTML, SASS/CSS and vanilla JavaScript only. I learned more about handling the footer ([this](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) article helped me a lot), and using the `position` CSS property to position the button and error image.

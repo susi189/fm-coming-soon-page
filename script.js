@@ -19,6 +19,7 @@ window.onload = () => {
 window.addEventListener("resize", () => {
   addImg();
 });
+
 //check email
 
 const submitBtn = document.getElementById("btn-submit");
