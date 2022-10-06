@@ -29,13 +29,9 @@ const errorSign = document.getElementById("error-sign");
 
 const checkEmail = (str) => {
   let isValid = false;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === "@") {
-      for (let j = i + 1; j < str.length; j++) {
-        if (str[j] === ".") {
-          isValid = true;
-        }
-      }
+  if (str.indexOf("@") !== -1) {
+    if (str.indexOf(".", str.indexOf("@")) !== -1) {
+      isValid = true;
     }
   }
 
