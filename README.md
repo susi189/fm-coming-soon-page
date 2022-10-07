@@ -6,6 +6,9 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 I hosted my solution on Github Pages [here](https://susi189.github.io/fm-coming-soon-page/).
 
+![Desktop version](./images/desktop.png)
+![Mobile version](./images/mobile.png)
+
 ## Table of contents
 
 - [The challenge](#the-challenge)
