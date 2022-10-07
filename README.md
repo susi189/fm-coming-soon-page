@@ -6,8 +6,11 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 I hosted my solution on Github Pages [here](https://susi189.github.io/fm-coming-soon-page/).
 
-![Desktop version](./images/result/desktop.png)
-![Mobile version](./images/result/mobile.png)
+<img
+  src="/images/result/desktop.png"
+  alt="Alt text"
+  title="Desktop version"
+  style="display: inline-block; margin: 0 auto; width: 700px">
 
 ## Table of contents
 
